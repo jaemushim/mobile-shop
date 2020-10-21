@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <!-- style Css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- stript -->
+      <div class="stript bg-light py-2 d-none d-md-block">
+        <div class="container-lg">
+          <div class="d-flex justify-content-end ml-auto color-333">
+            <span class="border-right px-3 font-size-12"
+              ><a href="">로그인</a></span
+            >
+            <span class="border-right px-3 font-size-12"
+              ><a href="">회원가입</a></span
+            >
+            <span class="border-right px-3 font-size-12"
+              ><a href="">배송조회</a></span
+            >
+            <span class="px-3 font-size-12 position-relative">
+              <a href="">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                &nbsp;장바구니&nbsp;
+                <span
+                  class="rounded-pill color-primary-bg text-white position-absolute"
+                  style="padding: 0.04rem 0.4rem"
+                  >1</span
+                >
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- search area -->
+      <div class="search-area p-2 d-none d-md-block">
+        <div class="container-lg">
+          <div class="row justify-content-between align-items-center px-3">
+            <!-- logo -->
+            <a href="#">
+              <img
+                src="img/logo.png"
+                class=""
+                style="width: 160px; height: 50px"
+                alt=""
+              />
+            </a>
+
+            <!-- search form -->
+            <form
+              class="form-inline position-relative d-none d-md-inline-block justify-content-between align-items-center md-form form-sm border rounded-pill"
+              style="
+                width: 30%;
+                height: 30px;
+                border: 1px solid #aaa !important;
+              "
+            >
+              <input
+                class="ml-3 border-0 font-size-12"
+                style="line-height: 17px; width: 80%"
+                type="text"
+                placeholder="검색어를 입력해주세요."
+                aria-label="Search"
+              />
+              <i
+                class="fas fa-search p-1 color-777 mr-2 font-size-14"
+                style="position: absolute; right: 0; top: 3px"
+                aria-hidden="true"
+              ></i>
+            </form>
+            <!-- banner-mini -->
+            <img
+              src="img/banner-mini.png"
+              class="img-fluid d-none d-md-block"
+              style="width: 160px; height: 50px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Nav -->
+      <nav class="navbar navbar-expand-md p-0 px-2">
+        <div class="container-lg">
+          <button
+            class="navbar-toggler p-0 align-self-center"
+            type="button"
+            data-toggle=""
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon d-md-none">
+              <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </span>
+          </button>
+          <a class="navbar-brand m-auto pr-4 d-md-none" href="#"
+            ><img src="img/logo.png" style="height: 50px" alt=""
+          /></a>
+
+          <!-- Mobile Nav -->
+          <div class="mobile-nav d-md-none" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav justify-content-between md-w-100 font-weight-bold p-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link color-555 font-nanumgothic" href="#"
+                  >통신사별</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555 font-nanumgothic" href="#"
+                  >제조사별</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555 font-nanumgothic" href="#"
+                  >사전예약</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555 font-nanumgothic" href="#"
+                  >이용방법</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555 font-nanumgothic" href="#"
+                  >구매후기</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-555 font-nanumgothic outline-0"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  고객센터
+                </a>
+                <div
+                  class="dropdown-menu border-0"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="#">Q & A</a>
+                  <a class="dropdown-item" href="#">문의게시판</a>
+                  <a class="dropdown-item" href="#">공지사항</a>
+                </div>
+              </li>
+            </ul>
+            <div class="mobile-bottom p-3 text-muted">
+              <h6 class="font-weight-normal">Login</h6>
+              <h6 class="font-weight-normal mt-3">Cart</h6>
+              <h6 class="font-weight-normal mt-3">Order</h6>
+              <h6 class="font-weight-normal mt-3">Mypage</h6>
+            </div>
+            <div class="social-icon p-3">
+              <img src="img/facebook.png" alt="" />
+              <img src="img/instagram.png" alt="" />
+              <img src="img/youtube.png" alt="" />
+              <img src="img/kakaostory.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="collapse navbar-collapse"
+            style="border-top: 1px solid #f2f2f2"
+          >
+            <ul
+              class="navbar-nav justify-content-between md-w-100 font-weight-bold"
+            >
+              <li class="nav-item">
+                <a class="nav-link color-555" href="#">통신사별</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555" href="#">제조사별</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555" href="#">사전예약</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555" href="#">이용방법</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-555" href="#">구매후기</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-555"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  고객센터
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Q & A</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">문의게시판</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">공지사항</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Main Banner -->
+      <section id="banner-main">
+        <div class="container-lg">
+          <!-- mobile main banner -->
+          <div class="owl-carousel owl-theme d-sm-none">
+            <div class="item">
+              <img
+                src="img/m-banner-main-1.jpg"
+                style="width: 100%; height: 400px"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="img/m-banner-main-1.jpg"
+                style="width: 100%; height: 400px; background-size: 100% 100%"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="img/m-banner-main-1.jpg"
+                style="width: 100%; height: 400px; background-size: 100% 100%"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Pc main banner -->
+          <div class="owl-carousel owl-theme d-none d-sm-block">
+            <div class="item">
+              <img
+                src="img/banner-main-1.jpg"
+                style="width: 100%; height: 400px"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="img/banner-main-1.jpg"
+                style="width: 100%; height: 400px; background-size: 100% 100%"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="img/banner-main-1.jpg"
+                style="width: 100%; height: 400px; background-size: 100% 100%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- hottest Item -->
+      <section id="hottest-item" class="mt-3">
+        <div class="container">
+          <h5 class="font-nanumgothic font-weight-medium">인기상품</h5>
+          <hr />
+          <div class="owl-carousel owl-theme">
+            <div class="item py-2 text-center">
+              <img src="img/1.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/2.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/3.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/4.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/5.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/6.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/7.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/8.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/9.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/10.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+
+            <div class="item py-2 text-center">
+              <img src="img/11.png" alt="phone" class="img-fluid" />
+              <h6>Samsung Galaxy 10</h6>
+              <div class="rating my-2 text-warning font-size-12">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="color-primary font-weight-bold">900,000원</span>
+              <small class="text-muted color-aaa"
+                ><strike>1,452,000</strike></small
+              >
+              <button
+                type="button"
+                class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+              >
+                장바구니
+                <i
+                  class="fa fa-plus font-size-8 color-333"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="my-3 invisible" />
+      </section>
+
+      <!-- Promotion banner -->
+      <div class="container-sm p-0">
+        <!-- mobile sale banner -->
+        <img src="img/m-sale-banner.jpg" class="img-fluid d-sm-none" alt="" />
+
+        <!-- sale banner min-width sm -->
+        <img
+          src="img/sale-banner.jpg"
+          class="img-fluid d-none my-lg-5 d-sm-block"
+          alt=""
+        />
+      </div>
+
+      <!-- Special Price -->
+      <section id="special-price" class="mt-3">
+        <hr class="my-4 invisible" />
+        <div class="container">
+          <h5 class="font-nanumgothic font-weight-medium d-inline-block">
+            특가상품
+          </h5>
+          <div
+            class="button-group filter-button-group d-inline-block text-right ml-auto"
+            style="width: 92%"
+            ;
+          >
+            <button class="btn is-checked color-777" data-filter="*">
+              ALL
+            </button>
+            <button class="btn color-777" data-filter=".samsung">삼성</button>
+            <button class="btn color-777" data-filter=".apple">애플</button>
+            <button class="btn color-777" data-filter=".lg">LG</button>
+          </div>
+
+          <div class="grid">
+            <div class="grid-item samsung">
+              <div class="item py-2 text-center border">
+                <img src="img/1.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item apple">
+              <div class="item py-2 text-center border">
+                <img src="img/2.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item lg">
+              <div class="item py-2 text-center border">
+                <img src="img/3.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item samsung">
+              <div class="item py-2 text-center border">
+                <img src="img/4.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item apple">
+              <div class="item py-2 text-center border">
+                <img src="img/5.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item lg">
+              <div class="item py-2 text-center border">
+                <img src="img/6.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item samsung">
+              <div class="item py-2 text-center border">
+                <img src="img/7.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item apple">
+              <div class="item py-2 text-center border">
+                <img src="img/8.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item lg">
+              <div class="item py-2 text-center border">
+                <img src="img/9.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item samsung">
+              <div class="item py-2 text-center border">
+                <img src="img/10.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item samsung">
+              <div class="item py-2 text-center border">
+                <img src="img/11.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item apple">
+              <div class="item py-2 text-center border">
+                <img src="img/12.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item samsung">
+              <div class="item py-2 text-center border">
+                <img src="img/13.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item lg">
+              <div class="item py-2 text-center border">
+                <img src="img/5.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item apple">
+              <div class="item py-2 text-center border">
+                <img src="img/4.png" alt="phone" class="img-fluid" />
+                <h6>Samsung Galaxy 10</h6>
+                <div class="rating my-2 text-warning font-size-12">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="color-primary font-weight-bold">900,000원</span>
+                <small class="text-muted color-aaa"
+                  ><strike>1,452,000</strike></small
+                >
+                <button
+                  type="button"
+                  class="btn color-yellow-bg font-weight-bold opacity-8 py-1 my-2 font-size-12"
+                >
+                  장바구니
+                  <i
+                    class="fa fa-plus font-size-8 color-333"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog -->
+      <section class="blog">
+        <hr class="my-5 invisible" />
+        <div class="container">
+          <h5 class="font-nanumgothic font-weight-medium">최신 블로그</h5>
+          <hr />
+          <div class="card-deck">
+            <div class="card">
+              <img
+                src="img/blog-1.jpg"
+                class="card-img-top"
+                alt="blog-img-1"
+                style="height: 250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">삼성, 화웨이 확실히 잡는다</h5>
+                <p class="card-text font-size-14 color-777">
+                  [매일일보 이상래 기자] 삼성전자가 플래그십 스마트폰 라인업을
+                  확대해 글로벌 스마트폰 리더십을 강화한다. 1일 업계에 따르면
+                  삼성전자는 최근 두 달간 글로벌 스마트폰 시장 점유율 1위를 중국
+                  화웨이에 내줬다.
+                </p>
+                <p class="card-text">
+                  <small class="color-aaa"
+                    >출처 :매일일보(http://www.m-i.kr)</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="img/blog-2.jpg"
+                class="card-img-top"
+                alt="blog-img-2"
+                style="height: 250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">갤럭시S10에 담긴 혁신은?</h5>
+                <p class="card-text font-size-14 color-777">
+                  삼성전자는 21일(한국 시간) 오전 4시 미국 샌프란시스코 빌
+                  그레이엄 시빅 오디토리움에서 갤럭시 스마트폰 언팩 행사를
+                  진행했다. 이번 행사에는 전 세계 파트너와 미디어 3500여 명이
+                  참석했다.
+                </p>
+                <p class="card-text">
+                  <small class="color-aaa"
+                    >출저 :비즈팩트(http://news.tf.co.kr)</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card d-sm-none d-lg-block">
+              <img
+                src="img/blog-3.jpg"
+                class="card-img-top"
+                alt="blog-img-3"
+                style="height: 250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">업계 최초 곡률 모니터</h5>
+                <p class="card-text font-size-14 color-777">
+                  삼성전자는 1일 업계 최초로 1000R 곡률을 적용한
+                  ‘오디세이(Odyssey) G7’ 커브드 게이밍 모니터 2종(32형·27형)을
+                  국내 시장에 출시한다. 오디세이 G7에 적용한 1000R은 화면
+                  중앙에서 가장자리까지 균일한 시청 거리를 제공한다.
+                </p>
+                <p class="card-text">
+                  <small class="color-aaa"
+                    >출저 :삼성뉴스룸(https://bit.ly/2BkTcte)</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <hr class="my-5 invisible" />
+    <footer class="footer mt-5 bg-light">
+      <div class="container-md">
+        <hr />
+        <div class="row justify-content-center">
+          <div class="row">
+            <div class="col-sm-2">
+              <img
+                src="img/logo-footer.png"
+                class="img-fluid d-block m-auto"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-10 text-center text-sm-left border-left">
+              <div class="footer-list font-size-12 text-muted">
+                <span class="mx-2 mt-1 d-inline-block">상호명 : 싸다몰</span>
+                <span class="mx-2 mt-1 d-inline-block"
+                  >주소 : 충청북도 청주시 흥덕구 봉명동 685-9번지 (직지대로667-
+                  12번길)</span
+                >
+                <span class="mx-2 mt-1 d-inline-block"
+                  >사업자등록번호 :111-123-567</span
+                >
+                <br />
+                <span class="mx-2 mt-1 d-inline-block"
+                  >통신판매신고번호 : 2020-충북청주-0000</span
+                >
+                <span class="mx-2 mt-1 d-inline-block"
+                  >입금계좌 : 신한은행 191432-11-111111</span
+                >
+                <br />
+                <span class="mx-2 mt-1 d-inline-block">대표자 : 홍길동</span>
+                <span class="mx-2 mt-1 d-inline-block"
+                  >E-mail : tkhy414@naver.com</span
+                >
+                <span class="mx-2 mt-1 d-inline-block">Tell : 9495-1111</span>
+                <span class="mx-2 mt-1 d-inline-block">Fax : 043-252-1111</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="copyright mt-4 p-4 bg-dark color-ccc text-center font-size-12"
+      >
+        <div class="container-md">
+          <p class="m-0">
+            본 홈페이지에 게재된 모든 게시글, 이미지, HTML 소스코드 등 홈페이지
+            컨텐츠에 관한 권리는 본사에 있으며,<br />
+            누구든지 본사의 승인없이 위 컨텐츠를 무단 배포 및 전재할 수 없고,
+            이를 위반할 경우 민형사상 책임을 물을 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Jquery & Bootstrap CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Owl Carousel JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Isotope CDN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <!-- Custom Javascript-->
+    <script src="index.js"></script>
+  </body>
+</html>

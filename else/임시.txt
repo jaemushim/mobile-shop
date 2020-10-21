@@ -1,0 +1,25 @@
+mysql 에서 sql 파일 불러올때 데이타베이스 이름(ex:shopee) 만들어주고 거기 안에서 파일 풀어야함
+
+버튼 가로로 배열할때 form row  >col 
+rating 할때 d-flex div에 넣기
+cart img에 style 로 height:120px;
+
+global.scss 파일에 
+button, button:focus{
+outline:none !important;
+box-shadow:none !important;
+}
+
+style.scss 에 include 부분부분 파일 scss 들 @import하기
+
+policy
+qty
+w-75?
+subtotal section
+font- baloo,raleway,rubik(cursive)
+typography.scss  
+global.scss
+12 14 16 18 20 fsz 
+
+sass 설치: node.js 설치 > npm init > npm install -g sass >
+package.json script-  "start": "sass ./sass/style.scss style.css --watch"
